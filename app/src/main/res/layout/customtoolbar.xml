@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/toolbarId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_light"
+    android:elevation="3dp"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    app:layout_scrollFlags="scroll|enterAlways|snap">
+
+    <Button
+        android:id="@+id/btnBookMarkTvTabId"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:background="@drawable/tabbuttonbackground"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="11">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="9"
+            android:background="@drawable/btngooglesearchs"
+            android:elevation="2dp"
+            android:weightSum="9.4">
+
+            <ImageButton
+                android:id="@+id/btnMicId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/micbuttonbackground"
+                android:src="@drawable/ic_mic_none_black_24dp" />
+
+            <EditText
+                android:id="@+id/editTextUrlId"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="7.8"
+                android:background="@color/transparent"
+                android:hint="Enter url or search"
+                android:inputType="textAutoComplete"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/btnClearId"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/hover_selector_two"
+                android:pointerIcon="hand" />
+
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageButton
+                android:id="@+id/btnSearchId"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/micbuttonbackground"
+                android:src="@drawable/ic_search_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.1">
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnBookMarkId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_bookmark_border_24" />
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnMoreId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_reorder_24" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
